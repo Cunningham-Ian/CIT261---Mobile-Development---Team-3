@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>CSS with JS</title>
+		<meta description="JS altering CSS property values">
+	</head>
+	<style>
+		p {
+			font-family:cursive;
+			text-decoration-color: aliceblue;
+		}
+	</style>
+	
+	<body>
+		<h1></h1>
+		<p id="p">Stylish text</p>
+		<button type="button" onclick="alter_css()">Click here to alter CSS</button>
+		<script type="text/javascript">
+			function alter_css() {
+				var p = document.getElementById ("p").style.color = "blue";
+				
+			}
+		</script>
+	</body>
+</html>
